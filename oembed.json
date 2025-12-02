@@ -1,0 +1,15 @@
+{
+    "version": "1.0",
+    "type": "rich",
+    "provider_name": "St Peter Chanel Catholic Primary School",
+    "provider_url": "https://st-peterchanel.bexley.sch.uk",
+    "title": "St Peter Chanel Catholic Primary School and Preschool",
+    "description": "Inspire, Challenge & Empower so through Christ we make a difference. A thriving one-form entry Catholic primary school with an on-site Pre-School in the London Borough of Bexley.",
+    "author_name": "St Peter Chanel Catholic Primary School",
+    "thumbnail_width": 600,
+    "thumbnail_height": 400,
+    "width": 600,
+    "height": 400,
+    "html": "<iframe src=\"https://st-peterchanel.bexley.sch.uk/embed\" width=\"600\" height=\"400\" frameborder=\"0\" allowfullscreen></iframe>",
+    "cache_age": 3600
+}

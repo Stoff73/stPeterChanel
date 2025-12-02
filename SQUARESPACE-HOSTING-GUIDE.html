@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squarespace Hosting Guide - St Peter Chanel Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: #f9f9f9;
+        }
+        h1 {
+            color: #1a365d;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            border-bottom: 4px solid #c53030;
+            padding-bottom: 1rem;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        h2 {
+            color: #c53030;
+            font-size: 1.8rem;
+            margin: 3rem 0 1rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        h3 {
+            color: #1a365d;
+            font-size: 1.3rem;
+            margin: 2rem 0 1rem 0;
+        }
+        h4 {
+            color: #2d3748;
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.5rem 0;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        .step-box {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-left: 4px solid #c53030;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .step-number {
+            background: #c53030;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 0.75rem;
+        }
+        .warning-box {
+            background: #fffbeb;
+            border: 1px solid #f59e0b;
+            border-left: 4px solid #f59e0b;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .warning-box::before {
+            content: "⚠️ Important: ";
+            font-weight: bold;
+        }
+        .tip-box {
+            background: #f0fdf4;
+            border: 1px solid #22c55e;
+            border-left: 4px solid #22c55e;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .tip-box::before {
+            content: "💡 Tip: ";
+            font-weight: bold;
+        }
+        .info-box {
+            background: #eff6ff;
+            border: 1px solid #3b82f6;
+            border-left: 4px solid #3b82f6;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .info-box::before {
+            content: "ℹ️ Note: ";
+            font-weight: bold;
+        }
+        ul, ol {
+            margin: 1rem 0 1rem 2rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        code {
+            background: #f1f5f9;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            color: #c53030;
+        }
+        .code-block {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+        .button-ref {
+            background: #e2e8f0;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .menu-path {
+            color: #1a365d;
+            font-weight: 600;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        th, td {
+            border: 1px solid #e2e8f0;
+            padding: 0.75rem;
+            text-align: left;
+        }
+        th {
+            background: #f8fafc;
+            font-weight: 600;
+        }
+        .toc {
+            background: white;
+            border: 1px solid #e2e8f0;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        .toc h3 {
+            margin-top: 0;
+        }
+        .toc ol {
+            margin-bottom: 0;
+        }
+        .toc a {
+            color: #1a365d;
+            text-decoration: none;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        .file-list {
+            background: #f8fafc;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        .file-list code {
+            display: block;
+            margin: 0.25rem 0;
+        }
+        .screenshot-placeholder {
+            background: #e2e8f0;
+            border: 2px dashed #94a3b8;
+            padding: 3rem;
+            text-align: center;
+            color: #64748b;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        @media print {
+            body {
+                background: white;
+                padding: 1rem;
+            }
+            .step-box, .warning-box, .tip-box, .info-box {
+                break-inside: avoid;
+            }
+            h2 {
+                break-after: avoid;
+            }
+        }
+        .checklist {
+            list-style: none;
+            margin-left: 0;
+        }
+        .checklist li {
+            padding-left: 2rem;
+            position: relative;
+        }
+        .checklist li::before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Squarespace Hosting Guide</h1>
+    <p class="subtitle">Complete Step-by-Step Instructions for Hosting the St Peter Chanel Catholic Primary School Website</p>
+
+    <div class="info-box">
+        This guide is written for people with no technical experience. Follow each step carefully in order. The entire process takes approximately 2-3 hours to complete.
+    </div>
+
+    <div class="toc">
+        <h3>Table of Contents</h3>
+        <ol>
+            <li><a href="#part1">Part 1: Before You Begin - What You Need</a></li>
+            <li><a href="#part2">Part 2: Creating Your Squarespace Account</a></li>
+            <li><a href="#part3">Part 3: Choosing and Setting Up Your Plan</a></li>
+            <li><a href="#part4">Part 4: Understanding Your Website Files</a></li>
+            <li><a href="#part5">Part 5: Accessing the Code Injection Area</a></li>
+            <li><a href="#part6">Part 6: Adding the CSS Styles</a></li>
+            <li><a href="#part7">Part 7: Adding the JavaScript</a></li>
+            <li><a href="#part8">Part 8: Creating Pages and Adding HTML Content</a></li>
+            <li><a href="#part9">Part 9: Setting Up Navigation Menus</a></li>
+            <li><a href="#part10">Part 10: Connecting Your Domain Name</a></li>
+            <li><a href="#part11">Part 11: Adding Your Logo and Images</a></li>
+            <li><a href="#part12">Part 12: Testing Your Website</a></li>
+            <li><a href="#part13">Part 13: Going Live - Publishing Your Site</a></li>
+            <li><a href="#part14">Part 14: Ongoing Maintenance</a></li>
+            <li><a href="#troubleshooting">Troubleshooting Common Problems</a></li>
+            <li><a href="#glossary">Glossary of Terms</a></li>
+        </ol>
+    </div>
+
+    <!-- PART 1 -->
+    <h2 id="part1">Part 1: Before You Begin - What You Need</h2>
+
+    <p>Before starting, make sure you have the following ready:</p>
+
+    <h3>Required Items Checklist</h3>
+    <ul class="checklist">
+        <li>A computer with internet access (Windows PC or Mac)</li>
+        <li>A modern web browser (Google Chrome is recommended)</li>
+        <li>An email address you can access</li>
+        <li>A payment method (credit/debit card) for Squarespace subscription</li>
+        <li>The website files folder (the folder containing all your HTML, CSS, and JS files)</li>
+        <li>Your school logo image file (PNG or JPG format)</li>
+        <li>Any photos you want to add to the website</li>
+        <li>Your domain name details (if you already own one, e.g., st-peterchanel.bexley.sch.uk)</li>
+    </ul>
+
+    <h3>Understanding the Costs</h3>
+    <p>Squarespace is a paid service. Here are the current plans (prices as of 2024):</p>
+
+    <table>
+        <tr>
+            <th>Plan Name</th>
+            <th>Monthly Cost (billed annually)</th>
+            <th>Suitable for This Website?</th>
+        </tr>
+        <tr>
+            <td>Personal</td>
+            <td>~£12/month</td>
+            <td>No - lacks code injection</td>
+        </tr>
+        <tr>
+            <td>Business</td>
+            <td>~£17/month</td>
+            <td><strong>Yes - Recommended</strong></td>
+        </tr>
+        <tr>
+            <td>Commerce Basic</td>
+            <td>~£22/month</td>
+            <td>Yes - but more than needed</td>
+        </tr>
+        <tr>
+            <td>Commerce Advanced</td>
+            <td>~£32/month</td>
+            <td>Yes - but more than needed</td>
+        </tr>
+    </table>
+
+    <div class="warning-box">
+        You need at least the <strong>Business</strong> plan or higher. The Personal plan does not include "Code Injection" which is essential for this website to work properly.
+    </div>
+
+    <h3>Time Required</h3>
+    <ul>
+        <li><strong>Initial setup:</strong> 2-3 hours</li>
+        <li><strong>Adding all pages:</strong> 3-4 hours (can be done over multiple sessions)</li>
+        <li><strong>Testing and adjustments:</strong> 1-2 hours</li>
+    </ul>
+
+    <!-- PART 2 -->
+    <h2 id="part2">Part 2: Creating Your Squarespace Account</h2>
+
+    <div class="step-box">
+        <p><span class="step-number">1</span><strong>Open your web browser</strong></p>
+        <p>Click on the Google Chrome icon on your computer (or another web browser like Safari or Edge).</p>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">2</span><strong>Go to the Squarespace website</strong></p>
+        <p>In the address bar at the top of your browser (where you type website addresses), type:</p>
+        <p><code>www.squarespace.com</code></p>
+        <p>Then press the <strong>Enter</strong> key on your keyboard.</p>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">3</span><strong>Click "Get Started"</strong></p>
+        <p>On the Squarespace homepage, look for a button that says <span class="button-ref">Get Started</span>. It's usually in the top right corner of the page. Click on it.</p>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">4</span><strong>Create your account</strong></p>
+        <p>You'll be asked to create an account. You have several options:</p>
+        <ul>
+            <li><strong>Sign up with Email:</strong> Enter your email address, then create a password</li>
+            <li><strong>Sign up with Google:</strong> If you have a Gmail account, you can use this</li>
+            <li><strong>Sign up with Apple:</strong> If you have an Apple ID, you can use this</li>
+        </ul>
+        <p>We recommend using your school email address if possible.</p>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">5</span><strong>Verify your email</strong></p>
+        <p>Squarespace will send a verification email to the address you provided. Go to your email inbox, find the email from Squarespace, and click the verification link inside.</p>
+    </div>
+
+    <div class="tip-box">
+        If you don't see the email, check your "Spam" or "Junk" folder. The email might take a few minutes to arrive.
+    </div>
+
+    <!-- PART 3 -->
+    <h2 id="part3">Part 3: Choosing and Setting Up Your Plan</h2>
+
+    <div class="step-box">
+        <p><span class="step-number">1</span><strong>Skip the template selection (for now)</strong></p>
+        <p>After creating your account, Squarespace will show you templates to choose from. For our purposes, we'll select the simplest template possible because we'll be replacing most of it with our own code.</p>
+        <p>Choose the template called <strong>"Blank"</strong> or the simplest option available (often called "Brine" or similar).</p>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">2</span><strong>Enter your site name</strong></p>
+        <p>When prompted, enter your school name:</p>
+        <p><code>St Peter Chanel Catholic Primary School</code></p>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">3</span><strong>Start your trial</strong></p>
+        <p>Squarespace offers a 14-day free trial. Click <span class="button-ref">Start Trial</span> to begin. You can explore during the trial before paying.</p>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">4</span><strong>Upgrade to Business Plan</strong></p>
+        <p>Before we can add our custom code, you need to upgrade to the Business plan:</p>
+        <ol>
+            <li>Look at the left side of the screen for a menu</li>
+            <li>Click on <span class="menu-path">Settings</span> (it has a gear icon)</li>
+            <li>Click on <span class="menu-path">Site Availability</span></li>
+            <li>Click on <span class="button-ref">Upgrade</span> or <span class="button-ref">Subscribe</span></li>
+            <li>Select the <strong>Business</strong> plan</li>
+            <li>Choose billing frequency (Annual is cheaper per month)</li>
+            <li>Enter your payment details</li>
+            <li>Complete the purchase</li>
+        </ol>
+    </div>
+
+    <div class="warning-box">
+        You must complete the upgrade before proceeding. The Code Injection feature we need is only available on Business plans and above.
+    </div>
+
+    <!-- PART 4 -->
+    <h2 id="part4">Part 4: Understanding Your Website Files</h2>
+
+    <p>Before we start uploading, let's understand what files you have and what they do:</p>
+
+    <h3>Your Website Folder Structure</h3>
+    <div class="file-list">
+        <code>📁 untitled folder (your main website folder)</code>
+        <code>├── 📄 index.html (the homepage)</code>
+        <code>├── 📄 styles.css (controls how everything looks)</code>
+        <code>├── 📄 script.js (makes interactive features work)</code>
+        <code>├── 📄 about-us.html, curriculum.html, etc. (main section pages)</code>
+        <code>├── 📁 about-us/ (folder containing About Us subpages)</code>
+        <code>├── 📁 key-information/ (folder containing Key Information subpages)</code>
+        <code>├── 📁 news-events/ (folder containing News subpages)</code>
+        <code>├── 📁 parents/ (folder containing Parents subpages)</code>
+        <code>├── 📁 children/ (folder containing Children subpages)</code>
+        <code>├── 📁 curriculum/ (folder containing Curriculum subpages)</code>
+        <code>└── 📁 catholic-life/ (folder containing Catholic Life subpages)</code>
+    </div>
+
+    <h3>What Each File Type Does</h3>
+    <table>
+        <tr>
+            <th>File Type</th>
+            <th>What It Does</th>
+            <th>Example Files</th>
+        </tr>
+        <tr>
+            <td><code>.html</code></td>
+            <td>Contains the content and structure of each page (text, headings, links)</td>
+            <td>index.html, about-us.html</td>
+        </tr>
+        <tr>
+            <td><code>.css</code></td>
+            <td>Controls the visual appearance (colours, fonts, spacing, layout)</td>
+            <td>styles.css</td>
+        </tr>
+        <tr>
+            <td><code>.js</code></td>
+            <td>Adds interactive features (menus, buttons, animations)</td>
+            <td>script.js</td>
+        </tr>
+    </table>
+
+    <!-- PART 5 -->
+    <h2 id="part5">Part 5: Accessing the Code Injection Area</h2>
+
+    <p>Squarespace has a special area where you can add custom code. This is where we'll add our CSS and JavaScript files.</p>
+
+    <div class="step-box">
+        <p><span class="step-number">1</span><strong>Go to your Squarespace dashboard</strong></p>
+        <p>If you're not already logged in, go to <code>www.squarespace.com</code> and click <span class="button-ref">Log In</span> in the top right corner.</p>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">2</span><strong>Select your website</strong></p>
+        <p>After logging in, you'll see a list of your websites. Click on the one for St Peter Chanel.</p>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">3</span><strong>Open Settings</strong></p>
+        <p>On the left-hand side menu, look for <span class="menu-path">Settings</span> (it has a gear/cog icon ⚙️). Click on it.</p>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">4</span><strong>Find Developer Tools</strong></p>
+        <p>In the Settings menu, scroll down until you find <span class="menu-path">Developer Tools</span>. Click on it.</p>
+        <p>If you don't see Developer Tools, you may need to scroll down, or it might be under "Advanced" settings.</p>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">5</span><strong>Open Code Injection</strong></p>
+        <p>Click on <span class="menu-path">Code Injection</span>.</p>
+        <p>You'll see a page with several text boxes. These are where we'll add our code.</p>
+    </div>
+
+    <div class="info-box">
+        The Code Injection page has different sections: "Header", "Footer", and sometimes "Lock Page". We'll primarily use the Header and Footer sections.
+    </div>
+
+    <!-- PART 6 -->
+    <h2 id="part6">Part 6: Adding the CSS Styles</h2>
+
+    <p>The CSS file (styles.css) controls how your website looks. We need to add it to Squarespace.</p>
+
+    <h3>Option A: Using Custom CSS (Recommended)</h3>
+
+    <div class="step-box">
+        <p><span class="step-number">1</span><strong>Open the Custom CSS area</strong></p>
+        <p>From your Squarespace dashboard:</p>
+        <ol>
+            <li>Click on <span class="menu-path">Design</span> in the left menu</li>
+            <li>Click on <span class="menu-path">Custom CSS</span></li>
+        </ol>
+        <p>A panel will open on the left side of the screen with a large text box.</p>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">2</span><strong>Open your styles.css file</strong></p>
+        <p>On your computer:</p>
+        <ol>
+            <li>Find your website folder</li>
+            <li>Find the file called <code>styles.css</code></li>
+            <li>Right-click on the file</li>
+            <li>Select "Open with" → "Notepad" (on Windows) or "TextEdit" (on Mac)</li>
+        </ol>
+        <p>The file will open showing lots of code.</p>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">3</span><strong>Copy all the CSS code</strong></p>
+        <ol>
+            <li>Click anywhere in the text</li>
+            <li>Press <strong>Ctrl + A</strong> (Windows) or <strong>Cmd + A</strong> (Mac) to select all the text</li>
+            <li>Press <strong>Ctrl + C</strong> (Windows) or <strong>Cmd + C</strong> (Mac) to copy</li>
+        </ol>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">4</span><strong>Paste into Squarespace</strong></p>
+        <ol>
+            <li>Go back to your Squarespace Custom CSS panel</li>
+            <li>Click inside the large text box</li>
+            <li>Press <strong>Ctrl + V</strong> (Windows) or <strong>Cmd + V</strong> (Mac) to paste</li>
+        </ol>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">5</span><strong>Save your changes</strong></p>
+        <p>Click the <span class="button-ref">Save</span> button at the top of the panel.</p>
+    </div>
+
+    <div class="tip-box">
+        After saving, you should see some of your styles appear on the page preview. If something looks wrong, don't worry - we still need to add the HTML and JavaScript.
+    </div>
+
+    <!-- PART 7 -->
+    <h2 id="part7">Part 7: Adding the JavaScript</h2>
+
+    <p>The JavaScript file (script.js) makes interactive features work, like the mobile menu and cookie consent.</p>
+
+    <div class="step-box">
+        <p><span class="step-number">1</span><strong>Go to Code Injection</strong></p>
+        <ol>
+            <li>Click on <span class="menu-path">Settings</span> in the left menu</li>
+            <li>Click on <span class="menu-path">Developer Tools</span></li>
+            <li>Click on <span class="menu-path">Code Injection</span></li>
+        </ol>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">2</span><strong>Open your script.js file</strong></p>
+        <p>On your computer:</p>
+        <ol>
+            <li>Find your website folder</li>
+            <li>Find the file called <code>script.js</code></li>
+            <li>Right-click on the file</li>
+            <li>Select "Open with" → "Notepad" (on Windows) or "TextEdit" (on Mac)</li>
+        </ol>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">3</span><strong>Copy all the JavaScript code</strong></p>
+        <ol>
+            <li>Click anywhere in the text</li>
+            <li>Press <strong>Ctrl + A</strong> to select all</li>
+            <li>Press <strong>Ctrl + C</strong> to copy</li>
+        </ol>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">4</span><strong>Add to Footer section</strong></p>
+        <p>In the Code Injection page, scroll down to find the section labelled <strong>"Footer"</strong>.</p>
+        <p>In the Footer text box, type the following exactly:</p>
+        <div class="code-block">&lt;script&gt;
+PASTE YOUR JAVASCRIPT CODE HERE
+&lt;/script&gt;</div>
+        <p>Replace "PASTE YOUR JAVASCRIPT CODE HERE" with your copied code by pressing <strong>Ctrl + V</strong>.</p>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">5</span><strong>Add Google Translate (also in Footer)</strong></p>
+        <p>After the closing <code>&lt;/script&gt;</code> tag, add these two lines:</p>
+        <div class="code-block">&lt;script&gt;
+function googleTranslateElementInit(){
+    new google.translate.TranslateElement({pageLanguage:'en'},'google-translate');
+}
+&lt;/script&gt;
+&lt;script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"&gt;&lt;/script&gt;</div>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">6</span><strong>Add Font Awesome (in Header section)</strong></p>
+        <p>Scroll up to the <strong>"Header"</strong> section and add:</p>
+        <div class="code-block">&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"&gt;
+&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+&lt;link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&amp;family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"&gt;</div>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">7</span><strong>Save your changes</strong></p>
+        <p>Click the <span class="button-ref">Save</span> button at the top of the page.</p>
+    </div>
+
+    <!-- PART 8 -->
+    <h2 id="part8">Part 8: Creating Pages and Adding HTML Content</h2>
+
+    <p>Now we need to create each page and add the HTML content. This is the most time-consuming part.</p>
+
+    <h3>Creating the Homepage</h3>
+
+    <div class="step-box">
+        <p><span class="step-number">1</span><strong>Go to Pages</strong></p>
+        <p>In the left menu, click on <span class="menu-path">Pages</span>.</p>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">2</span><strong>Edit the existing homepage</strong></p>
+        <p>You should see a page called "Home" or similar. Hover over it and click <span class="button-ref">Edit</span>.</p>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">3</span><strong>Add a Code Block</strong></p>
+        <ol>
+            <li>When editing the page, click the <strong>+</strong> button to add a block</li>
+            <li>In the menu that appears, look for <strong>"Code"</strong> or search for it</li>
+            <li>Click on the <strong>Code</strong> block to add it</li>
+        </ol>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">4</span><strong>Open your index.html file</strong></p>
+        <p>On your computer, open <code>index.html</code> with Notepad or TextEdit.</p>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">5</span><strong>Copy the content section</strong></p>
+        <p>You only need to copy the part between <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code> tags, but <strong>NOT</strong> including the script tags at the bottom.</p>
+        <p>Look for everything from after <code>&lt;body&gt;</code> up to (but not including) <code>&lt;script src="script.js"&gt;</code>.</p>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">6</span><strong>Paste into the Code Block</strong></p>
+        <ol>
+            <li>In the Code Block dialog box, make sure <strong>"Display Source"</strong> is <strong>unchecked</strong></li>
+            <li>Paste your HTML code into the text area</li>
+            <li>Click <span class="button-ref">Apply</span></li>
+        </ol>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">7</span><strong>Save the page</strong></p>
+        <p>Click <span class="button-ref">Save</span> or <span class="button-ref">Done</span> in the top corner.</p>
+    </div>
+
+    <h3>Creating Additional Pages</h3>
+
+    <p>Repeat this process for each page on your website. For each page:</p>
+
+    <div class="step-box">
+        <p><span class="step-number">1</span><strong>Create a new page</strong></p>
+        <ol>
+            <li>Go to <span class="menu-path">Pages</span> in the left menu</li>
+            <li>Click the <strong>+</strong> button</li>
+            <li>Select <strong>Blank Page</strong></li>
+            <li>Give it a name (e.g., "About Us")</li>
+        </ol>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">2</span><strong>Add a Code Block and paste HTML</strong></p>
+        <p>Follow the same steps as for the homepage:</p>
+        <ol>
+            <li>Edit the page</li>
+            <li>Add a Code Block</li>
+            <li>Open the corresponding HTML file (e.g., about-us.html)</li>
+            <li>Copy the body content (excluding scripts)</li>
+            <li>Paste into the Code Block</li>
+            <li>Save</li>
+        </ol>
+    </div>
+
+    <h3>Complete Page List</h3>
+    <p>Here are all the pages you need to create:</p>
+
+    <table>
+        <tr>
+            <th>Page Name</th>
+            <th>HTML File to Use</th>
+            <th>URL Slug</th>
+        </tr>
+        <tr><td>Home</td><td>index.html</td><td>/</td></tr>
+        <tr><td>About Us</td><td>about-us.html</td><td>/about-us</td></tr>
+        <tr><td>Key Information</td><td>key-information.html</td><td>/key-information</td></tr>
+        <tr><td>News & Events</td><td>news-events.html</td><td>/news-events</td></tr>
+        <tr><td>Parents</td><td>parents.html</td><td>/parents</td></tr>
+        <tr><td>Children</td><td>children.html</td><td>/children</td></tr>
+        <tr><td>Curriculum</td><td>curriculum.html</td><td>/curriculum</td></tr>
+        <tr><td>Catholic Life</td><td>catholic-life.html</td><td>/catholic-life</td></tr>
+        <tr><td>Preschool</td><td>preschool.html</td><td>/preschool</td></tr>
+        <tr><td>Safeguarding</td><td>safeguarding.html</td><td>/safeguarding</td></tr>
+        <tr><td>Accessibility</td><td>accessibility.html</td><td>/accessibility</td></tr>
+        <tr><td>Site Map</td><td>sitemap.html</td><td>/sitemap</td></tr>
+    </table>
+
+    <h3>Creating Subpages</h3>
+    <p>For pages in folders (like about-us/staff.html), you'll need to create them as subpages:</p>
+
+    <div class="step-box">
+        <p><span class="step-number">1</span><strong>Create a folder for subpages</strong></p>
+        <ol>
+            <li>In Pages, click the <strong>+</strong> button</li>
+            <li>Select <strong>Folder</strong></li>
+            <li>Name it (e.g., "About Us Pages")</li>
+        </ol>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">2</span><strong>Add pages to the folder</strong></p>
+        <p>Create each subpage and drag it into the folder, or create it directly within the folder.</p>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">3</span><strong>Set the correct URL</strong></p>
+        <p>For each subpage, you need to set the URL slug to match your links:</p>
+        <ol>
+            <li>Click on the page's gear icon (⚙️) or right-click and select "Settings"</li>
+            <li>Find the "URL Slug" field</li>
+            <li>Set it to match (e.g., for about-us/staff.html, set the slug to "staff")</li>
+        </ol>
+    </div>
+
+    <div class="tip-box">
+        You can work on this over several sessions. Remember to save frequently and you can come back and continue where you left off.
+    </div>
+
+    <!-- PART 9 -->
+    <h2 id="part9">Part 9: Setting Up Navigation Menus</h2>
+
+    <p>Since your HTML already contains navigation menus, they should appear automatically. However, you may need to disable Squarespace's built-in navigation:</p>
+
+    <div class="step-box">
+        <p><span class="step-number">1</span><strong>Access site styles</strong></p>
+        <ol>
+            <li>Click on <span class="menu-path">Design</span> in the left menu</li>
+            <li>Click on <span class="menu-path">Site Styles</span></li>
+        </ol>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">2</span><strong>Hide the default header</strong></p>
+        <p>Look for options related to:</p>
+        <ul>
+            <li>Header (set visibility to hidden if possible)</li>
+            <li>Navigation (disable if possible)</li>
+            <li>Logo (hide if using your own)</li>
+        </ul>
+        <p>The exact options vary by template. You may need to explore the settings.</p>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">3</span><strong>Hide the default footer</strong></p>
+        <p>Similarly, look for footer options and hide the default footer since your HTML includes a custom footer.</p>
+    </div>
+
+    <div class="info-box">
+        If you can't completely hide the default navigation, you can add CSS to the Custom CSS area to hide it:
+        <div class="code-block">header#header { display: none !important; }
+footer.Footer { display: none !important; }</div>
+    </div>
+
+    <!-- PART 10 -->
+    <h2 id="part10">Part 10: Connecting Your Domain Name</h2>
+
+    <p>If you already own a domain name (like st-peterchanel.bexley.sch.uk), you can connect it to your Squarespace site.</p>
+
+    <h3>Option A: Transfer Domain to Squarespace</h3>
+
+    <div class="step-box">
+        <p><span class="step-number">1</span><strong>Go to Domains settings</strong></p>
+        <ol>
+            <li>Click on <span class="menu-path">Settings</span></li>
+            <li>Click on <span class="menu-path">Domains</span></li>
+        </ol>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">2</span><strong>Add a domain</strong></p>
+        <p>Click <span class="button-ref">Use a Domain I Own</span></p>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">3</span><strong>Enter your domain</strong></p>
+        <p>Type your domain name and follow the instructions to verify ownership.</p>
+    </div>
+
+    <h3>Option B: Point Domain to Squarespace (Keep at Current Provider)</h3>
+
+    <p>If you want to keep your domain with your current provider (like your IT department manages it), you'll need to update DNS records:</p>
+
+    <div class="step-box">
+        <p><span class="step-number">1</span><strong>Get Squarespace DNS settings</strong></p>
+        <p>In Domains settings, click to connect a domain and select "Connect a Domain from Another Provider". Squarespace will show you the records you need to add.</p>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">2</span><strong>Contact your domain provider/IT department</strong></p>
+        <p>Provide them with the following information (from Squarespace):</p>
+        <ul>
+            <li><strong>CNAME record</strong> pointing to verify.squarespace.com</li>
+            <li><strong>A records</strong> pointing to Squarespace IP addresses</li>
+        </ul>
+    </div>
+
+    <div class="warning-box">
+        DNS changes can take 24-48 hours to take effect worldwide. Don't panic if your site doesn't immediately appear on your domain.
+    </div>
+
+    <h3>Option C: Use a Squarespace Domain (Temporary or Permanent)</h3>
+
+    <p>You can also purchase a new domain through Squarespace, or use the free .squarespace.com subdomain they provide while you set things up.</p>
+
+    <!-- PART 11 -->
+    <h2 id="part11">Part 11: Adding Your Logo and Images</h2>
+
+    <h3>Uploading Images</h3>
+
+    <div class="step-box">
+        <p><span class="step-number">1</span><strong>Access the asset library</strong></p>
+        <p>When editing any page, you can upload images. Or go to:</p>
+        <ol>
+            <li>Click on <span class="menu-path">Design</span></li>
+            <li>Look for <span class="menu-path">Custom Files</span> or similar</li>
+        </ol>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">2</span><strong>Upload your images</strong></p>
+        <ol>
+            <li>Click <span class="button-ref">Upload</span> or drag and drop files</li>
+            <li>Wait for upload to complete</li>
+            <li>Note the URL of each image (you'll need this)</li>
+        </ol>
+    </div>
+
+    <h3>Adding Images to Your Pages</h3>
+
+    <p>Currently, your HTML has placeholder divs for images. To add real images:</p>
+
+    <div class="step-box">
+        <p><span class="step-number">1</span><strong>Find the placeholder in your HTML</strong></p>
+        <p>Look for code like:</p>
+        <div class="code-block">&lt;div class="logo-placeholder"&gt;&lt;/div&gt;</div>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">2</span><strong>Replace with an image tag</strong></p>
+        <p>Replace the placeholder with:</p>
+        <div class="code-block">&lt;img src="YOUR_IMAGE_URL" alt="Description of image"&gt;</div>
+        <p>Replace YOUR_IMAGE_URL with the URL from Squarespace's asset library.</p>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">3</span><strong>Update in Squarespace</strong></p>
+        <ol>
+            <li>Edit the page in Squarespace</li>
+            <li>Click on the Code Block</li>
+            <li>Find and update the HTML</li>
+            <li>Save changes</li>
+        </ol>
+    </div>
+
+    <div class="tip-box">
+        Keep image file sizes small (under 500KB) for faster loading. Use JPG for photos and PNG for logos with transparent backgrounds.
+    </div>
+
+    <!-- PART 12 -->
+    <h2 id="part12">Part 12: Testing Your Website</h2>
+
+    <p>Before going live, thoroughly test your website:</p>
+
+    <h3>Desktop Testing</h3>
+
+    <div class="step-box">
+        <p><span class="step-number">1</span><strong>Preview your site</strong></p>
+        <p>In Squarespace, click the <span class="button-ref">Preview</span> button (usually top right) or look for a preview option.</p>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">2</span><strong>Check every page</strong></p>
+        <p>Click through every link and page to ensure:</p>
+        <ul>
+            <li>Pages load without errors</li>
+            <li>Text is readable</li>
+            <li>Images appear correctly</li>
+            <li>Links go to the right places</li>
+            <li>Navigation menu works</li>
+        </ul>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">3</span><strong>Test interactive features</strong></p>
+        <ul>
+            <li>Click the mobile menu button (hamburger icon)</li>
+            <li>Test the cookie consent popup</li>
+            <li>Try the high contrast button</li>
+            <li>Test the Google Translate dropdown</li>
+            <li>Scroll to test the back-to-top button</li>
+        </ul>
+    </div>
+
+    <h3>Mobile Testing</h3>
+
+    <div class="step-box">
+        <p><span class="step-number">1</span><strong>Use device preview</strong></p>
+        <p>In the Squarespace editor, look for a device icon that lets you preview on different screen sizes (phone, tablet, desktop).</p>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">2</span><strong>Test on a real phone</strong></p>
+        <p>Open your site's preview URL on your mobile phone to test:</p>
+        <ul>
+            <li>Text is large enough to read</li>
+            <li>Buttons are easy to tap</li>
+            <li>Mobile menu opens and closes properly</li>
+            <li>Pages scroll smoothly</li>
+        </ul>
+    </div>
+
+    <h3>Testing Checklist</h3>
+    <ul class="checklist">
+        <li>Homepage loads correctly</li>
+        <li>All main navigation links work</li>
+        <li>All subpage links work</li>
+        <li>Mobile menu opens and closes</li>
+        <li>Cookie consent appears and buttons work</li>
+        <li>High contrast mode toggles on and off</li>
+        <li>Google Translate widget appears</li>
+        <li>All images display (or show appropriate placeholders)</li>
+        <li>Phone numbers are clickable</li>
+        <li>Email links work</li>
+        <li>Forms can be filled out and submitted</li>
+        <li>Site looks good on phone/tablet</li>
+        <li>No spelling mistakes visible</li>
+    </ul>
+
+    <!-- PART 13 -->
+    <h2 id="part13">Part 13: Going Live - Publishing Your Site</h2>
+
+    <p>When you're happy with your site, it's time to make it live:</p>
+
+    <div class="step-box">
+        <p><span class="step-number">1</span><strong>Check site availability settings</strong></p>
+        <ol>
+            <li>Go to <span class="menu-path">Settings</span></li>
+            <li>Click on <span class="menu-path">Site Availability</span></li>
+        </ol>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">2</span><strong>Set to Public</strong></p>
+        <p>Change the setting from "Private" to <strong>"Public"</strong>.</p>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">3</span><strong>Confirm your domain is connected</strong></p>
+        <p>Go to <span class="menu-path">Settings</span> → <span class="menu-path">Domains</span> and ensure your domain shows as "Connected".</p>
+    </div>
+
+    <div class="step-box">
+        <p><span class="step-number">4</span><strong>Test the live site</strong></p>
+        <p>Open a new browser window (or use incognito/private mode) and visit your website URL to ensure everything looks correct to the public.</p>
+    </div>
+
+    <div class="warning-box">
+        After going live, anyone on the internet can see your site. Make sure all content is accurate and appropriate before publishing.
+    </div>
+
+    <!-- PART 14 -->
+    <h2 id="part14">Part 14: Ongoing Maintenance</h2>
+
+    <p>Your website will need regular updates. Here's how to manage it:</p>
+
+    <h3>Updating Content</h3>
+
+    <div class="step-box">
+        <p><strong>To update text or content:</strong></p>
+        <ol>
+            <li>Log in to Squarespace</li>
+            <li>Go to <span class="menu-path">Pages</span></li>
+            <li>Click on the page you want to edit</li>
+            <li>Click <span class="button-ref">Edit</span></li>
+            <li>Click on the Code Block containing your content</li>
+            <li>Make your changes to the HTML</li>
+            <li>Click <span class="button-ref">Apply</span></li>
+            <li>Click <span class="button-ref">Save</span></li>
+        </ol>
+    </div>
+
+    <h3>Adding News Articles</h3>
+    <p>To add new news items to the Latest News page:</p>
+    <ol>
+        <li>Edit the latest-news page</li>
+        <li>Find the news grid section in the HTML</li>
+        <li>Copy an existing news card HTML block</li>
+        <li>Paste it and update the text and date</li>
+        <li>Save changes</li>
+    </ol>
+
+    <h3>Updating Term Dates</h3>
+    <p>At the start of each academic year:</p>
+    <ol>
+        <li>Edit the term-dates page</li>
+        <li>Update the dates in the HTML tables</li>
+        <li>Save changes</li>
+    </ol>
+
+    <h3>Adding New Policies</h3>
+    <p>When you have new policy documents:</p>
+    <ol>
+        <li>Upload the PDF to Squarespace's file manager</li>
+        <li>Copy the file URL</li>
+        <li>Edit the policies page</li>
+        <li>Add a new policy item with the download link</li>
+        <li>Save changes</li>
+    </ol>
+
+    <h3>Regular Tasks</h3>
+    <table>
+        <tr>
+            <th>Task</th>
+            <th>Frequency</th>
+        </tr>
+        <tr><td>Check all links work</td><td>Monthly</td></tr>
+        <tr><td>Update news/events</td><td>As needed</td></tr>
+        <tr><td>Update term dates</td><td>Start of academic year</td></tr>
+        <tr><td>Review and update policies</td><td>Annually</td></tr>
+        <tr><td>Check contact information</td><td>When changes occur</td></tr>
+        <tr><td>Pay Squarespace subscription</td><td>Monthly or annually</td></tr>
+        <tr><td>Renew domain (if applicable)</td><td>Annually</td></tr>
+    </table>
+
+    <!-- TROUBLESHOOTING -->
+    <h2 id="troubleshooting">Troubleshooting Common Problems</h2>
+
+    <h3>Problem: The website looks wrong or unstyled</h3>
+    <div class="step-box">
+        <p><strong>Possible causes and solutions:</strong></p>
+        <ul>
+            <li><strong>CSS not added:</strong> Check that you've added all the CSS to the Custom CSS area</li>
+            <li><strong>CSS has errors:</strong> Check you copied the entire file without missing any characters</li>
+            <li><strong>Browser cache:</strong> Press Ctrl+Shift+R to force refresh the page</li>
+        </ul>
+    </div>
+
+    <h3>Problem: JavaScript features don't work (menu, cookies, etc.)</h3>
+    <div class="step-box">
+        <p><strong>Possible causes and solutions:</strong></p>
+        <ul>
+            <li><strong>Script not added:</strong> Check the Code Injection Footer section has the script</li>
+            <li><strong>Script tags wrong:</strong> Ensure code is wrapped in <code>&lt;script&gt;</code> tags</li>
+            <li><strong>Syntax error:</strong> Check browser console for errors (press F12)</li>
+        </ul>
+    </div>
+
+    <h3>Problem: Links don't work or go to wrong pages</h3>
+    <div class="step-box">
+        <p><strong>Possible causes and solutions:</strong></p>
+        <ul>
+            <li><strong>Page doesn't exist:</strong> Create the missing page in Squarespace</li>
+            <li><strong>URL slug wrong:</strong> Check the page's URL slug matches the link</li>
+            <li><strong>Link path wrong:</strong> Update the href in the HTML to match Squarespace URLs</li>
+        </ul>
+    </div>
+
+    <h3>Problem: Images don't appear</h3>
+    <div class="step-box">
+        <p><strong>Possible causes and solutions:</strong></p>
+        <ul>
+            <li><strong>Placeholder divs:</strong> Replace placeholders with actual <code>&lt;img&gt;</code> tags</li>
+            <li><strong>Wrong URL:</strong> Get the correct URL from Squarespace's asset library</li>
+            <li><strong>File not uploaded:</strong> Upload the image to Squarespace first</li>
+        </ul>
+    </div>
+
+    <h3>Problem: Mobile menu doesn't open</h3>
+    <div class="step-box">
+        <p><strong>Possible causes and solutions:</strong></p>
+        <ul>
+            <li><strong>JavaScript error:</strong> Check the console for errors (F12 in browser)</li>
+            <li><strong>ID mismatch:</strong> Ensure HTML element IDs match those in the JavaScript</li>
+        </ul>
+    </div>
+
+    <h3>Problem: "Code Injection" option is missing</h3>
+    <div class="step-box">
+        <p><strong>Solution:</strong></p>
+        <p>You need to upgrade to the Business plan or higher. The Personal plan doesn't include Code Injection.</p>
+    </div>
+
+    <h3>Problem: Cookie consent keeps appearing</h3>
+    <div class="step-box">
+        <p><strong>Possible causes:</strong></p>
+        <ul>
+            <li><strong>Browser blocking cookies:</strong> Check browser privacy settings</li>
+            <li><strong>Incognito mode:</strong> Cookies don't persist in private browsing</li>
+            <li><strong>Script error:</strong> Check the JavaScript for errors</li>
+        </ul>
+    </div>
+
+    <h3>Getting Help from Squarespace</h3>
+    <p>If you're stuck, Squarespace offers support:</p>
+    <ol>
+        <li>Click the <strong>?</strong> help icon in the Squarespace dashboard</li>
+        <li>Search their help center at <code>support.squarespace.com</code></li>
+        <li>Contact their support team via live chat or email</li>
+    </ol>
+
+    <!-- GLOSSARY -->
+    <h2 id="glossary">Glossary of Terms</h2>
+
+    <table>
+        <tr>
+            <th>Term</th>
+            <th>Meaning</th>
+        </tr>
+        <tr>
+            <td><strong>Browser</strong></td>
+            <td>The application you use to view websites (Chrome, Safari, Firefox, Edge)</td>
+        </tr>
+        <tr>
+            <td><strong>Code Block</strong></td>
+            <td>A Squarespace element that lets you add custom HTML code</td>
+        </tr>
+        <tr>
+            <td><strong>Code Injection</strong></td>
+            <td>A Squarespace feature that lets you add code to every page at once</td>
+        </tr>
+        <tr>
+            <td><strong>CSS</strong></td>
+            <td>Cascading Style Sheets - the code that controls how your website looks</td>
+        </tr>
+        <tr>
+            <td><strong>DNS</strong></td>
+            <td>Domain Name System - translates website names to computer addresses</td>
+        </tr>
+        <tr>
+            <td><strong>Domain</strong></td>
+            <td>Your website's address (e.g., st-peterchanel.bexley.sch.uk)</td>
+        </tr>
+        <tr>
+            <td><strong>HTML</strong></td>
+            <td>HyperText Markup Language - the code that creates web page content</td>
+        </tr>
+        <tr>
+            <td><strong>JavaScript (JS)</strong></td>
+            <td>Programming code that makes web pages interactive</td>
+        </tr>
+        <tr>
+            <td><strong>Preview</strong></td>
+            <td>Viewing your website before making it public</td>
+        </tr>
+        <tr>
+            <td><strong>Publish</strong></td>
+            <td>Making your website visible to the public</td>
+        </tr>
+        <tr>
+            <td><strong>Slug</strong></td>
+            <td>The part of a URL after the domain (e.g., /about-us)</td>
+        </tr>
+        <tr>
+            <td><strong>Template</strong></td>
+            <td>A pre-made website design that you can customise</td>
+        </tr>
+        <tr>
+            <td><strong>URL</strong></td>
+            <td>Uniform Resource Locator - a web address</td>
+        </tr>
+    </table>
+
+    <hr style="margin: 3rem 0;">
+
+    <div style="text-align: center; color: #666; padding: 2rem;">
+        <p><strong>St Peter Chanel Catholic Primary School</strong></p>
+        <p>Website Hosting Guide</p>
+        <p>Created December 2025</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">For assistance, contact your IT support provider.</p>
+    </div>
+
+</body>
+</html>

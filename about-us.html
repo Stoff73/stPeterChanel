@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about St Peter Chanel Catholic Primary School - our mission, values, staff, and governance.">
+    <title>About Us - St Peter Chanel Catholic Primary School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent" class="cookie-consent" role="dialog" aria-labelledby="cookie-title">
+        <div class="cookie-content">
+            <h3 id="cookie-title">Cookie Preferences</h3>
+            <p>We use cookies to enhance your browsing experience. By clicking "Accept All", you consent to our use of cookies.</p>
+            <div class="cookie-options">
+                <label class="cookie-option"><input type="checkbox" id="cookie-essential" checked disabled><span>Essential Cookies (Required)</span></label>
+                <label class="cookie-option"><input type="checkbox" id="cookie-analytics"><span>Analytics Cookies</span></label>
+                <label class="cookie-option"><input type="checkbox" id="cookie-marketing"><span>Marketing Cookies</span></label>
+            </div>
+            <div class="cookie-buttons">
+                <button id="cookie-accept-all" class="btn btn-primary">Accept All</button>
+                <button id="cookie-accept-selected" class="btn btn-secondary">Accept Selected</button>
+                <button id="cookie-reject" class="btn btn-outline">Reject Non-Essential</button>
+            </div>
+        </div>
+    </div>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <span class="school-trust">Part of St Oscar Romero Catholic Academy Trust</span>
+                </div>
+                <div class="top-bar-right">
+                    <div class="accessibility-options">
+                        <button id="high-contrast-toggle" class="accessibility-btn" aria-label="Toggle high contrast"><i class="fas fa-adjust"></i></button>
+                        <button id="font-size-increase" class="accessibility-btn" aria-label="Increase font size"><i class="fas fa-font"></i>+</button>
+                        <button id="font-size-decrease" class="accessibility-btn" aria-label="Decrease font size"><i class="fas fa-font"></i>-</button>
+                    </div>
+                    <div class="translate-widget" id="google-translate"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <a href="index.html" class="logo-link">
+                        <div class="logo-placeholder" aria-label="School Logo"></div>
+                        <div class="school-name">
+                            <h1>St Peter Chanel</h1>
+                            <span class="school-subtitle">Catholic Primary School and Preschool</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="header-right">
+                    <div class="contact-info">
+                        <a href="tel:02083007280" class="contact-item"><i class="fas fa-phone"></i><span>020 8300 7280</span></a>
+                        <a href="mailto:admin@st-peterchanel.bexley.sch.uk" class="contact-item"><i class="fas fa-envelope"></i><span>admin@st-peterchanel.bexley.sch.uk</span></a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://twitter.com/SORCATrust" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://instagram.com/sorcatrust" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav" id="main-nav" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item has-submenu">
+                    <a href="about-us.html" class="nav-link active">About Us <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="about-us/welcome.html">Welcome From The Headteacher</a></li>
+                        <li><a href="about-us/mission.html">Mission Statement &amp; Values</a></li>
+                        <li><a href="about-us/history.html">History of Our School</a></li>
+                        <li><a href="about-us/contact.html">Contact Us</a></li>
+                        <li><a href="about-us/staff.html">Our Staff Team</a></li>
+                        <li><a href="about-us/governors.html">Governors</a></li>
+                        <li><a href="about-us/behaviour.html">Relationships and Behaviour</a></li>
+                        <li><a href="about-us/associates.html">Our Associates</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-submenu">
+                    <a href="key-information.html" class="nav-link">Key Information <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="key-information/gdpr.html">GDPR / Data Protection</a></li>
+                        <li><a href="key-information/admissions.html">Admissions</a></li>
+                        <li><a href="key-information/british-values.html">British Values</a></li>
+                        <li><a href="key-information/send.html">SEND</a></li>
+                        <li><a href="key-information/ofsted.html">Ofsted Reports &amp; Data</a></li>
+                        <li><a href="key-information/sports-funding.html">Primary School Sports Funding</a></li>
+                        <li><a href="key-information/policies.html">School Policies</a></li>
+                        <li><a href="key-information/pupil-premium.html">Pupil Premium</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-submenu">
+                    <a href="news-events.html" class="nav-link">News and Events <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="news-events/latest-news.html">Latest News</a></li>
+                        <li><a href="news-events/calendar.html">Calendar</a></li>
+                        <li><a href="news-events/newsletters.html">Newsletters</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-submenu">
+                    <a href="parents.html" class="nav-link">Parents and Carers <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="parents/term-dates.html">Term Dates</a></li>
+                        <li><a href="parents/wraparound-care.html">Wraparound Care</a></li>
+                        <li><a href="parents/homework.html">Homework &amp; Home Learning</a></li>
+                        <li><a href="parents/school-meals.html">School Meals</a></li>
+                        <li><a href="parents/online-safety.html">Online Safety</a></li>
+                        <li><a href="parents/communication.html">Communication</a></li>
+                        <li><a href="parents/online-payments.html">Online Payments</a></li>
+                        <li><a href="parents/pta.html">PTA</a></li>
+                        <li><a href="parents/parents-forum.html">Parents Forum</a></li>
+                        <li><a href="parents/school-clubs.html">School Clubs</a></li>
+                        <li><a href="parents/secondary-transition.html">Secondary Transition</a></li>
+                        <li><a href="parents/uniform.html">Uniform</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-submenu">
+                    <a href="children.html" class="nav-link">Children <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="children/school-council.html">School Council</a></li>
+                        <li><a href="children/choir.html">Choir</a></li>
+                        <li><a href="children/outdoor-learning.html">Outdoor Learning</a></li>
+                        <li><a href="children/gallery.html">Gallery</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-submenu">
+                    <a href="curriculum.html" class="nav-link">Curriculum <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="curriculum/overview.html">Curriculum Overview</a></li>
+                        <li><a href="curriculum/wellbeing.html">Wellbeing</a></li>
+                        <li><a href="curriculum/eyfs.html">Early Years Foundation Stage</a></li>
+                        <li><a href="curriculum/english.html">English</a></li>
+                        <li><a href="curriculum/mathematics.html">Mathematics</a></li>
+                        <li><a href="curriculum/science.html">Science</a></li>
+                        <li><a href="curriculum/pe.html">PE</a></li>
+                        <li><a href="curriculum/history.html">History</a></li>
+                        <li><a href="curriculum/geography.html">Geography</a></li>
+                        <li><a href="curriculum/pshe-rse.html">PSHE/RSE</a></li>
+                        <li><a href="curriculum/art-dt.html">Art and Design Technology</a></li>
+                        <li><a href="curriculum/re.html">Religious Education</a></li>
+                        <li><a href="curriculum/computing-mfl.html">Computing &amp; MFL</a></li>
+                        <li><a href="curriculum/music.html">Music</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-submenu">
+                    <a href="catholic-life.html" class="nav-link">Catholic Life <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="catholic-life/prayers.html">Prayers</a></li>
+                        <li><a href="catholic-life/parish.html">Our Parish</a></li>
+                        <li><a href="catholic-life/angels.html">SPC Angels</a></li>
+                        <li><a href="catholic-life/sacraments.html">Sacraments</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="preschool.html" class="nav-link">Pre-School</a></li>
+                <li class="nav-item"><a href="safeguarding.html" class="nav-link">Safeguarding</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header" id="main-content">
+        <div class="page-header-image">
+            <!-- Page header image placeholder -->
+        </div>
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <div class="container">
+                <h1>About Us</h1>
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>About Us</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Content -->
+    <section class="page-content">
+        <div class="container">
+            <div class="page-with-sidebar">
+                <div class="main-content">
+                    <h2>Welcome to St Peter Chanel</h2>
+                    <p class="lead">St Peter Chanel is a thriving one-form entry Catholic primary school with an on-site Pre-School, located in the London Borough of Bexley.</p>
+
+                    <p>We are a Catholic School where we believe we are all children of God and together we create a loving Christian community underpinned by common Gospel values. All children, from all faiths and no faiths, are welcome.</p>
+
+                    <div class="image-placeholder" style="height: 300px; margin: 2rem 0;" aria-label="School building image">
+                        <!-- School building image placeholder -->
+                    </div>
+
+                    <p>Our extensive grounds allow us to provide stimulating opportunities for outdoor learning. We work closely with our parish, St Lawrence's in Sidcup, and benefit from strong links that provide rich opportunities for both the school and church, giving us all a strong sense of community.</p>
+
+                    <p>We are a proud member of St Oscar Romero Catholic Academy Trust and part of the Corpus Christi Partnership, a collaborative network of Catholic schools in the area.</p>
+
+                    <h2>Our Mission</h2>
+                    <p><strong>"Inspire, Challenge & Empower so through Christ we make a difference"</strong></p>
+
+                    <h3>Our Aims</h3>
+                    <ul>
+                        <li>To educate children to reach their full potential through a memorable and exciting curriculum that challenges and inspires</li>
+                        <li>To maintain high expectations for all in their learning, attitudes and pursuit of excellence</li>
+                        <li>To nurture spiritual and moral development so that we all act out the Christ in ourselves and see the Christ in others</li>
+                        <li>To empower children to be independent learners and thinkers who take responsibility for their own learning</li>
+                    </ul>
+
+                    <h2>Quick Links</h2>
+                    <div class="quick-links-grid" style="grid-template-columns: repeat(2, 1fr); margin-top: 1.5rem;">
+                        <a href="about-us/welcome.html" class="quick-link-card">
+                            <div class="quick-link-icon"><i class="fas fa-user-tie"></i></div>
+                            <h3>Headteacher's Welcome</h3>
+                            <p>A message from Mr Davies</p>
+                        </a>
+                        <a href="about-us/staff.html" class="quick-link-card">
+                            <div class="quick-link-icon"><i class="fas fa-users"></i></div>
+                            <h3>Our Staff</h3>
+                            <p>Meet our dedicated team</p>
+                        </a>
+                        <a href="about-us/governors.html" class="quick-link-card">
+                            <div class="quick-link-icon"><i class="fas fa-landmark"></i></div>
+                            <h3>Governors</h3>
+                            <p>School governance information</p>
+                        </a>
+                        <a href="about-us/contact.html" class="quick-link-card">
+                            <div class="quick-link-icon"><i class="fas fa-envelope"></i></div>
+                            <h3>Contact Us</h3>
+                            <p>Get in touch with the school</p>
+                        </a>
+                    </div>
+                </div>
+
+                <aside class="sidebar">
+                    <div class="sidebar-widget">
+                        <h4>About Us</h4>
+                        <ul class="sidebar-links">
+                            <li><a href="about-us/welcome.html">Welcome From The Headteacher</a></li>
+                            <li><a href="about-us/mission.html">Mission Statement & Values</a></li>
+                            <li><a href="about-us/history.html">History of Our School</a></li>
+                            <li><a href="about-us/contact.html">Contact Us</a></li>
+                            <li><a href="about-us/staff.html">Our Staff Team</a></li>
+                            <li><a href="about-us/governors.html">Governors</a></li>
+                            <li><a href="about-us/behaviour.html">Relationships and Behaviour</a></li>
+                            <li><a href="about-us/associates.html">Our Associates</a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-widget">
+                        <h4>Quick Contact</h4>
+                        <p><i class="fas fa-phone"></i> 020 8300 7280</p>
+                        <p><i class="fas fa-envelope"></i> admin@st-peterchanel.bexley.sch.uk</p>
+                        <a href="about-us/contact.html" class="btn btn-primary" style="margin-top: 1rem; width: 100%;">Contact Us</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-placeholder small" aria-label="School Logo"></div>
+                        <h3>St Peter Chanel</h3>
+                        <p>Catholic Primary School and Preschool</p>
+                    </div>
+                    <p class="footer-motto">"Inspire, Challenge & Empower so through Christ we make a difference"</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="key-information/admissions.html">Admissions</a></li>
+                        <li><a href="curriculum.html">Curriculum</a></li>
+                        <li><a href="parents.html">Parents</a></li>
+                        <li><a href="news-events.html">News & Events</a></li>
+                        <li><a href="about-us/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <address class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Bexley, London</p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:02083007280">020 8300 7280</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:admin@st-peterchanel.bexley.sch.uk">admin@st-peterchanel.bexley.sch.uk</a></p>
+                    </address>
+                    <div class="footer-social">
+                        <a href="https://twitter.com/SORCATrust" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://instagram.com/sorcatrust" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Our Trust</h4>
+                    <div class="trust-info">
+                        <a href="https://www.oscarromero.co.uk" target="_blank" rel="noopener noreferrer" class="trust-logo-link">
+                            <div class="logo-placeholder trust-logo" aria-label="St Oscar Romero Trust Logo"></div>
+                        </a>
+                        <p>Part of St Oscar Romero Catholic Academy Trust</p>
+                        <p class="trust-contact">
+                            <a href="mailto:enquiries@OscarRomero.co.uk">enquiries@OscarRomero.co.uk</a><br>
+                            <a href="tel:02072028199">0207 202 8199</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-accreditations">
+                <div class="accreditation-logos">
+                    <div class="logo-placeholder accreditation" aria-label="Ofsted Logo"></div>
+                    <div class="logo-placeholder accreditation" aria-label="Catholic Education Logo"></div>
+                    <div class="logo-placeholder accreditation" aria-label="Times Tables Rock Stars Gold Award"></div>
+                    <div class="logo-placeholder accreditation" aria-label="Sport England Logo"></div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>&copy; 2025 St Peter Chanel Catholic Primary School. All rights reserved.</p>
+                </div>
+                <div class="footer-bottom-right">
+                    <ul class="footer-legal-links">
+                        <li><a href="key-information/gdpr.html">Privacy Policy</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                        <li><a href="#" id="cookie-settings-link">Cookie Settings</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google-translate');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
